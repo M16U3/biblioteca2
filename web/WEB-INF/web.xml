@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>ServLibro</servlet-name>
+        <servlet-class>com.mig.serv.ServLibro</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServAutor</servlet-name>
+        <servlet-class>com.mig.serv.ServAutor</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServLibro</servlet-name>
+        <url-pattern>/app/libro.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServAutor</servlet-name>
+        <url-pattern>/app/autor.do</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
