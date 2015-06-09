@@ -42,9 +42,9 @@ public class TagGridAutor extends BodyTagSupport {
                 out.println("<tr>");
                 out.println("<td><input type=\"button\" value=\"Detalle\" onclick=\"detalle('" + a.getAutoAutor() + "');\"></td>");
                 out.println("<td><input type=\"button\" value=\"Editar\" onclick=\"editar('" + a.getAutoAutor() + "');\"></td>");
-                out.println("<td>" + autor.getAutoAutor().toString() + "</td>");
-                out.println("<td>" + autor.getAutoNombre() + "</td>");
-                out.println("<td>" + autor.getAutoApellidos() + "</td>");
+                out.println("<td>" + a.getAutoAutor()  + "</td>");
+                out.println("<td>" + a.getAutoNombre() + "</td>");
+                out.println("<td>" + a.getAutoApellidos() + "</td>");
                 out.println("</tr>");
             }
             out.println("</table>");

@@ -21,7 +21,8 @@
             Autor auto = null;
             if (opcion.equals("edit") || opcion.equals("detalle")) {
                 auto = new Autor();
-                auto.setAutoAutor(autor);
+                auto.setId(autor);
+                auto = auto.getAutor();
             }
 
         %>

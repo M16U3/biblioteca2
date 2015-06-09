@@ -8,6 +8,10 @@
         <servlet-name>ServAutor</servlet-name>
         <servlet-class>com.mig.serv.ServAutor</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServApartado</servlet-name>
+        <servlet-class>com.mig.serv.ServApartado</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ServLibro</servlet-name>
         <url-pattern>/app/libro.do</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>ServAutor</servlet-name>
         <url-pattern>/app/autor.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServApartado</servlet-name>
+        <url-pattern>/app/apartado.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
